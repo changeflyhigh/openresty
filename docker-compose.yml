@@ -1,1 +1,10 @@
-11111
+version: '3'
+services:
+  web-app:
+    image: nginx:latest
+    environment:
+      - SERVER_NAME=www.isuanova.com
+      - PUBLIC_IP=152.32.215.10
+    ports:
+      - "80:80"
+      - "443:443"
